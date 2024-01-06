@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Manipulation Lab</title>
-</head>
-<body>
-
-
-<script>
-const name = "NICOLE";
-
 // Step 1: Create a new div element
 const divElement = document.createElement("div");
 
@@ -34,11 +21,8 @@ const secondLi = ul.querySelector("li:nth-child(2)");
 ul.removeChild(secondLi);
 
 // Step 6: Set the text content of the div
-divElement.textContent = `${name} is the champion`;
+const name = "NICOLE";
+divElement.textContent = `${nicole} is the champion`;
 
 // Step 7: Append the div to the body
-document.body.appendChild(divElement);
-</script>
-
-</body>
-</html>
+document.body.append(divElement);
